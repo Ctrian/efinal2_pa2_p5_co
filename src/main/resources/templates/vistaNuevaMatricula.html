@@ -10,27 +10,27 @@
 </head>
 
 <body>
-	<form th:action="@{/matriculas/reporte}" th:object="${matricula}" method="POST">
+	<form th:action="@{/matriculas/nueva}" th:object="${matriculaAux}" method="POST">
 		<table class="table table-success table-striped">
 			<tr>
 				<td><label>Cédula: </label></td>
-				<td><input type="text" th:fiedl="${matricula.cedula}"></td>
+				<td><input type="text" th:fiedl="${matriculaAux.cedula}"></td>
 			</tr>
 			<tr>
 				<td><label>Código Materia 1:</label></td>
-				<td><input type="text" th:field="${matricula.codigoMateria1}"></td>
+				<td><input type="text" th:field="${matriculaAux.codigoMateria1}"></td>
 			</tr>
 			<tr>
 				<td><label>Código Materia 2: </label></td>
-				<td><input type="text" th:field="${matricula.codigoMateria2}"></td>
+				<td><input type="text" th:field="${matriculaAux.codigoMateria2}"></td>
 			</tr>
 			<tr>
 				<td><label>Código Materia 3: </label></td>
-				<td><input type="text" th:field="${matriucula.codigoMateria3}"></td>
+				<td><input type="text" th:field="${matriculaAux.codigoMateria3}"></td>
 			</tr>
 			<tr>
 				<td><label>Código Materia 4: </label></td>
-				<td><input type="text" th:field="${matricula.codigoMateria4}"></td>
+				<td><input type="text" th:field="${matriculaAux.codigoMateria4}"></td>
 			</tr>
 		</table>
 		<input type="submit" value="Guardar" class="btn btn-primary">
